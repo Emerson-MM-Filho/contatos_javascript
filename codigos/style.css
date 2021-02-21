@@ -1,0 +1,89 @@
+body {
+    --color-primary: #f3f2ec;
+    --color-secundary: #c4c5ba;
+    --color-buttons: #53724f;
+
+    background: var(--color-primary);
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    font-size: 18px;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+    width: 85%;
+    height: 85%;
+}
+
+.headContacts {
+    display: flex;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.title {
+    display: flex;
+}
+
+.filterContacts {
+    position: absolute;
+    right: 150px;
+}
+
+#buttonFilter {
+    background-image: url(/midia/iconFilter.png);
+    background-color: var(--color-primary);
+    background-size: 16px;
+    background-position: right;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 16px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--color-buttons);
+}
+
+#buttonNewContact {
+    position: absolute;
+    right: 0;
+}
+
+.listContacts {
+    display: flex;
+    border: 2px solid var(--color-secundary);
+}
+
+#buttonNewContact{
+    background-color: var(--color-buttons);
+    outline: none;
+    border-radius: 4px;
+    border: none;
+    width: 100px;
+    height: 25px;
+    color: var(--color-primary);
+}
+#buttonList {
+    background-image: url(/midia/iconList.png);
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    margin-left: 50px;
+}
+
+#buttonPanel {
+    background-image: url(/midia/iconPanel.png);
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    margin-left: 10px;
+}
