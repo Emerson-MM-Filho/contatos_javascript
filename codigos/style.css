@@ -39,11 +39,7 @@ body {
 }
 
 #buttonSearch {
-    background-image: url(/midia/iconSearch.svg);
     background-color: var(--color-primary);
-    background-size: 16px;
-    background-position: right;
-    background-repeat: no-repeat;
     width: 100px;
     height: 16px;
     border: none;
@@ -77,8 +73,7 @@ body {
 }
 
 #buttonList {
-    background-image: url(/midia/iconList.svg);
-    background-repeat: no-repeat;
+    background-color: var(--color-primary);
     width: 16px;
     height: 16px;
     border: none;
@@ -89,8 +84,7 @@ body {
 }
 
 #buttonPanel {
-    background-image: url(/midia/iconPanel.svg);
-    background-repeat: no-repeat;
+    background-color: var(--color-primary);
     width: 16px;
     height: 16px;
     border: none;
@@ -98,4 +92,17 @@ body {
     padding-left: 10px;
     margin-left: 10px;
     cursor: pointer;
+}
+
+.svgicones {
+    width: 24px;
+    height: 24px;
+}
+
+.svgicones:hover {
+    fill: #ff856f;
+}
+
+.svgicones::after {
+    fill: #ff856f;
 }
