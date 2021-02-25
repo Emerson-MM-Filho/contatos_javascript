@@ -1,10 +1,12 @@
 body {
-    --color-primary: #f3f2ec;
+    --color-primary: #F7F6F1;
     --color-secundary: #c4c5ba;
-    --color-buttons: #53724f;
+    --color-buttons: #677767;
+    --color-text: #363636;
 
     background: var(--color-primary);
     font-family: 'Roboto', sans-serif;
+    color: var(--color-text);
     position: relative;
     font-size: 18px;
     margin: 0;
@@ -27,6 +29,8 @@ body {
 
 .title {
     display: flex;
+    font-size: 2rem;
+    transform: translateY(-25%);
 }
 
 .filterContacts {
@@ -34,8 +38,8 @@ body {
     right: 150px;
 }
 
-#buttonFilter {
-    background-image: url(/midia/iconFilter.png);
+#buttonSearch {
+    background-image: url(/midia/iconSearch.svg);
     background-color: var(--color-primary);
     background-size: 16px;
     background-position: right;
@@ -50,6 +54,7 @@ body {
 #buttonNewContact {
     position: absolute;
     right: 0;
+    cursor: pointer;
 }
 
 .listContacts {
@@ -60,14 +65,19 @@ body {
 #buttonNewContact{
     background-color: var(--color-buttons);
     outline: none;
-    border-radius: 4px;
+    border-radius: 2px;
     border: none;
     width: 100px;
     height: 25px;
     color: var(--color-primary);
 }
+
+#buttonNewContact:hover{
+    background-color: #6A986C;
+}
+
 #buttonList {
-    background-image: url(/midia/iconList.png);
+    background-image: url(/midia/iconList.svg);
     background-repeat: no-repeat;
     width: 16px;
     height: 16px;
@@ -75,10 +85,11 @@ body {
     outline: none;
     padding-left: 10px;
     margin-left: 50px;
+    cursor: pointer;
 }
 
 #buttonPanel {
-    background-image: url(/midia/iconPanel.png);
+    background-image: url(/midia/iconPanel.svg);
     background-repeat: no-repeat;
     width: 16px;
     height: 16px;
@@ -86,4 +97,5 @@ body {
     outline: none;
     padding-left: 10px;
     margin-left: 10px;
+    cursor: pointer;
 }
