@@ -104,11 +104,13 @@ body {
 .listContacts {
     display: flex;
     border: 2px solid var(--color-secundary);
+    justify-content: center;
+}
+
+#contactLabel {
+    width: 95%;
+    background-color: var(--color-contact);
 }
 
 #contact {
     display: flex;
-    background-color: var(--color-contact);
-    width: 100%;
-    height: 95%;
-}
