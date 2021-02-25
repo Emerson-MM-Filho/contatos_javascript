@@ -86,10 +86,10 @@
                     </svg>
                 </button>
             </div>
-            <div class="filterContacts">
-                <input id="buttonSearch" placeholder="Pesquisar">
+            <div class="searchContacts">
+                <i class="serchContactsIcon">
                     <svg class="svgicones" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                    viewBox="0 0 512.005 512.005" style="enable-background:new 0 0 512.005 512.005;" xml:space="preserve">
+                        viewBox="0 0 512.005 512.005" style="enable-background:new 0 0 512.005 512.005;" xml:space="preserve">
                         <g>
                             <path d="M505.749,475.587l-145.6-145.6c28.203-34.837,45.184-79.104,45.184-127.317c0-111.744-90.923-202.667-202.667-202.667
                                 S0,90.925,0,202.669s90.923,202.667,202.667,202.667c48.213,0,92.48-16.981,127.317-45.184l145.6,145.6
@@ -97,7 +97,8 @@
                                 M202.667,362.669c-88.235,0-160-71.765-160-160s71.765-160,160-160s160,71.765,160,160S290.901,362.669,202.667,362.669z"/>
                         </g>
                     </svg>
-                </input>
+                </i>
+                <input id="buttonSearch" placeholder="Pesquisar"></input>
             </div>
             <div class="newContacts">
                 <button id="buttonNewContact">Adcionar</button>
@@ -105,11 +106,16 @@
         </div>
         <div class="listContacts">
             <div id="contactLabel">
-                <div id="pictureProfile"></div>
+                <div id="contact">
+                    <div id="pictureProfile"></div>
+                    <div id="nameContact">Emerson Moreno Machado Filho</div>
+                    <div id="phoneContact">(69) 9 8156-3880</div>
+                    <div id="emailContact">emerson.dev.machado@gmail.com</div>
+                    <div id="optionContact">...</div>
+                </div>
             </div>
         </div>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>

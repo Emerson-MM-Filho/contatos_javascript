@@ -3,6 +3,8 @@ body {
     --color-secundary: #c4c5ba;
     --color-buttons: #677767;
     --color-text: #363636;
+    --color-hover: #ff856f;
+    --color-contact: #ffffff;
 
     background: var(--color-primary);
     font-family: 'Roboto', sans-serif;
@@ -33,7 +35,26 @@ body {
     transform: translateY(-25%);
 }
 
-.filterContacts {
+.showAs {
+    position: relative;
+    left: 50px;
+}
+
+#buttonList {
+    background-color: var(--color-primary);
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#buttonPanel {
+    background-color: var(--color-primary);
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.searchContacts {
     position: absolute;
     right: 150px;
 }
@@ -47,15 +68,23 @@ body {
     border-bottom: 1px solid var(--color-buttons);
 }
 
+#buttonSearch:hover {
+    border-bottom: 1px solid var(--color-hover);
+}
+
+.svgicones {
+    width: 20px;
+    height: 20px;
+}
+
+.svgicones:hover {
+    fill: var(--color-hover);
+}
+
 #buttonNewContact {
     position: absolute;
     right: 0;
     cursor: pointer;
-}
-
-.listContacts {
-    display: flex;
-    border: 2px solid var(--color-secundary);
 }
 
 #buttonNewContact{
@@ -69,40 +98,17 @@ body {
 }
 
 #buttonNewContact:hover{
-    background-color: #6A986C;
+    background-color: var(--color-hover);
 }
 
-#buttonList {
-    background-color: var(--color-primary);
-    width: 16px;
-    height: 16px;
-    border: none;
-    outline: none;
-    padding-left: 10px;
-    margin-left: 50px;
-    cursor: pointer;
+.listContacts {
+    display: flex;
+    border: 2px solid var(--color-secundary);
 }
 
-#buttonPanel {
-    background-color: var(--color-primary);
-    width: 16px;
-    height: 16px;
-    border: none;
-    outline: none;
-    padding-left: 10px;
-    margin-left: 10px;
-    cursor: pointer;
-}
-
-.svgicones {
-    width: 24px;
-    height: 24px;
-}
-
-.svgicones:hover {
-    fill: #ff856f;
-}
-
-.svgicones::after {
-    fill: #ff856f;
+#contact {
+    display: flex;
+    background-color: var(--color-contact);
+    width: 100%;
+    height: 95%;
 }
