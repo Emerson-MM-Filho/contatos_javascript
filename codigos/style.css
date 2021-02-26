@@ -1,10 +1,8 @@
 body {
-    --color-primary: #F7F6F1;
-    --color-secundary: #c4c5ba;
-    --color-buttons: #677767;
-    --color-text: #363636;
-    --color-hover: #ff856f;
-    --color-contact: #ffffff;
+    --color-primary: #3B403A;
+    --color-secundary: #232622;
+    --color-hover: #D93B18;
+    --color-text: #ffffff;
 
     background: var(--color-primary);
     font-family: 'Roboto', sans-serif;
@@ -65,16 +63,22 @@ body {
     height: 16px;
     border: none;
     outline: none;
-    border-bottom: 1px solid var(--color-buttons);
+    border-bottom: 2px solid var(--color-secundary);
+    color: var(--color-text);
 }
 
 #buttonSearch:hover {
-    border-bottom: 1px solid var(--color-hover);
+    border-bottom: 2px solid var(--color-hover);
+}
+
+#buttonSearch::placeholder {
+    color: var(--color-secundary);
 }
 
 .svgicones {
     width: 20px;
     height: 20px;
+    fill: var(--color-secundary);
 }
 
 .svgicones:hover {
@@ -88,13 +92,13 @@ body {
 }
 
 #buttonNewContact{
-    background-color: var(--color-buttons);
+    background-color: var(--color-text);
     outline: none;
     border-radius: 2px;
     border: none;
     width: 100px;
     height: 25px;
-    color: var(--color-primary);
+    color: var(--color-secundary);
 }
 
 #buttonNewContact:hover{
@@ -102,15 +106,41 @@ body {
 }
 
 .listContacts {
-    display: flex;
     border: 2px solid var(--color-secundary);
+    border-radius: 2px;
     justify-content: center;
+    color: var(--color-text);
 }
 
 #contactLabel {
-    width: 95%;
-    background-color: var(--color-contact);
+    position: relative;
+    height: 75px;
+    margin: 15px;
+    background-color: var(--color-secundary);
+    border-radius: 15px;
 }
 
 #contact {
     display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+td {
+    text-align: center;
+}
+
+.profileIcon {
+    width: 50px;
+    height: 50px;
+}
+
+.optionsContactIcon {
+    width: 20px;
+    height: 20px;
+    fill: var(--color-primary);
+}
+
+.optionsContactIcon:hover {
+    fill: var(--color-hover);
+}
