@@ -1,12 +1,12 @@
 body {
     --color-primary: #3B403A;
     --color-secundary: #232622;
+    --color-tertiry: #ffffff;
     --color-hover: #D93B18;
-    --color-text: #ffffff;
 
     background: var(--color-primary);
     font-family: 'Roboto', sans-serif;
-    color: var(--color-text);
+    color: var(--color-tertiry);
     position: relative;
     font-size: 18px;
     margin: 0;
@@ -63,8 +63,8 @@ body {
     height: 16px;
     border: none;
     outline: none;
-    border-bottom: 2px solid var(--color-secundary);
-    color: var(--color-text);
+    border-bottom: 2px solid var(--color-tertiry);
+    color: var(--color-tertiry);
 }
 
 #buttonSearch:hover {
@@ -72,13 +72,13 @@ body {
 }
 
 #buttonSearch::placeholder {
-    color: var(--color-secundary);
+    color: var(--color-tertiry);
 }
 
 .svgicones {
     width: 20px;
     height: 20px;
-    fill: var(--color-secundary);
+    fill: var(--color-tertiry);
 }
 
 .svgicones:hover {
@@ -92,7 +92,7 @@ body {
 }
 
 #buttonNewContact{
-    background-color: var(--color-text);
+    background-color: var(--color-tertiry);
     outline: none;
     border-radius: 2px;
     border: none;
@@ -103,13 +103,14 @@ body {
 
 #buttonNewContact:hover{
     background-color: var(--color-hover);
+    color: var(--color-tertiry);
 }
 
 .listContacts {
     border: 2px solid var(--color-secundary);
     border-radius: 2px;
     justify-content: center;
-    color: var(--color-text);
+    color: var(--color-tertiry);
 }
 
 #contactLabel {
@@ -138,7 +139,7 @@ td {
 .optionsContactIcon {
     width: 20px;
     height: 20px;
-    fill: var(--color-primary);
+    fill: var(--color-tertiry);
 }
 
 .optionsContactIcon:hover {
