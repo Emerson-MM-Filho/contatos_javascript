@@ -1,0 +1,54 @@
+/*Configurando os botôes de modo de exibição*/
+.showAsList {
+    position: relative;
+    left: 50px;
+}
+.showAsPanel {
+    position: relative;
+    left: 25px;
+}
+#contactShowAs {
+    position: relative;
+    left: 50px;
+    cursor: pointer;
+}
+
+#svgShowAsList, 
+#svgShowAsPanel {
+    --color-tertiry: #121212;
+    --color-hover: #D93B18;
+
+    fill: var(--color-tertiry);
+    height: 20px;
+    width: 20px;
+    margin: 10px;
+}
+
+input[type="radio"] {
+    position: relative;
+    transform: translateX(-50%) translateY(-50%);
+    width: 20px;
+    height: 20px;
+    opacity: 0;
+}
+
+input[type="radio"] + #svgShowAsList, #svgShowAsPanel {
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+#svgShowAsList, #svgShowAsPanel {
+    cursor: pointer;
+}
+
+input[class="showAsList"]:hover + #svgShowAsList:hover,
+input[class="showAsList"]:checked + #svgShowAsList,
+input[class="showAsList"]:focus + #svgShowAsList {
+    fill: var(--color-hover);
+}
+
+input[class="showAsPanel"]:hover + #svgShowAsPanel:hover,
+input[class="showAsPanel"]:checked + #svgShowAsPanel,
+input[class="showAsPanel"]:focus + #svgShowAsPanel {
+    fill: var(--color-hover);
+}

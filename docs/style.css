@@ -1,7 +1,7 @@
 body {
-    --color-primary: #3B403A;
-    --color-secundary: #232622;
-    --color-tertiry: #ffffff;
+    --color-primary: #fcfcfc;
+    --color-secundary: #e0e0e0;
+    --color-tertiry: #121212;
     --color-hover: #D93B18;
 
     background: var(--color-primary);
@@ -16,44 +16,42 @@ body {
     justify-content: center;
 }
 
+/*Definindo a área util do site*/
 .main {
     width: 85%;
     height: 85%;
 }
 
+/*Personalizando os icones (SVG)*/
+.svgicon {
+    width: 20px;
+    height: 20px;
+    fill: var(--color-tertiry);
+}
+
+.svgicon:hover {
+    fill: var(--color-hover);
+}
+
+/*Cabeçalho principal do site*/
 .headContacts {
     display: flex;
     position: relative;
     margin-bottom: 25px;
 }
 
+/*Título (Contato)*/
 .title {
     display: flex;
     font-size: 2rem;
-    transform: translateY(-25%);
+
 }
 
-.showAs {
-    position: relative;
-    left: 50px;
-}
-
-#buttonList {
-    background-color: var(--color-primary);
-    border: none;
-    outline: none;
-    cursor: pointer;
-}
-
-#buttonPanel {
-    background-color: var(--color-primary);
-    border: none;
-    outline: none;
-    cursor: pointer;
-}
-
+/*Input pesquisar cliente*/
 .searchContacts {
     position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     right: 150px;
 }
 
@@ -75,18 +73,11 @@ body {
     color: var(--color-tertiry);
 }
 
-.svgicones {
-    width: 20px;
-    height: 20px;
-    fill: var(--color-tertiry);
-}
-
-.svgicones:hover {
-    fill: var(--color-hover);
-}
-
+/*Input adcionar novo cliente*/
 #buttonNewContact {
     position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     right: 0;
     cursor: pointer;
 }
@@ -94,7 +85,7 @@ body {
 #buttonNewContact{
     background-color: var(--color-tertiry);
     outline: none;
-    border-radius: 2px;
+    border-radius: 3px;
     border: none;
     width: 100px;
     height: 25px;
@@ -104,8 +95,10 @@ body {
 #buttonNewContact:hover{
     background-color: var(--color-hover);
     color: var(--color-tertiry);
+    box-shadow: 2px 2px 5px #2326229c;
 }
 
+/*Configurando a área da lista de contatos*/
 .listContacts {
     border: 2px solid var(--color-secundary);
     border-radius: 2px;
@@ -113,6 +106,7 @@ body {
     color: var(--color-tertiry);
 }
 
+/*Container de cada contato*/
 #contactLabel {
     position: relative;
     height: 75px;
@@ -127,15 +121,18 @@ body {
     height: 100%;
 }
 
+/*Editando a tabela*/
 td {
     text-align: center;
 }
 
+/*Foto de perfil do cliente*/
 .profileIcon {
     width: 50px;
     height: 50px;
 }
 
+/*Botão de opções do cliente*/
 .optionsContactIcon {
     width: 20px;
     height: 20px;
