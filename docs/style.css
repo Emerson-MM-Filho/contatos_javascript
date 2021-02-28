@@ -8,7 +8,7 @@ body {
     font-family: 'Roboto', sans-serif;
     color: var(--color-tertiry);
     position: relative;
-    font-size: 18px;
+    font-size: 1rem;
     margin: 0;
     height: 100vh;
     display: flex;
@@ -24,8 +24,8 @@ body {
 
 /*Personalizando os icones (SVG)*/
 .svgicon {
-    width: 20px;
-    height: 20px;
+    width: 1.5rem;
+    height: 1.5rem;
     fill: var(--color-tertiry);
 }
 
@@ -37,7 +37,7 @@ body {
 .headContacts {
     display: flex;
     position: relative;
-    margin-bottom: 25px;
+    margin-bottom: 2rem;
 }
 
 /*Título (Contato)*/
@@ -52,7 +52,7 @@ body {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    right: 150px;
+    right: 10rem;
 }
 
 #buttonSearch {
@@ -87,8 +87,8 @@ body {
     outline: none;
     border-radius: 3px;
     border: none;
-    width: 100px;
-    height: 25px;
+    width: 7rem;
+    height: 2rem;
     color: var(--color-secundary);
 }
 
@@ -109,8 +109,8 @@ body {
 /*Container de cada contato*/
 #contactLabel {
     position: relative;
-    height: 75px;
-    margin: 15px;
+    height: 4,5rem;
+    margin: 0.8rem;
     background-color: var(--color-secundary);
     border-radius: 15px;
 }

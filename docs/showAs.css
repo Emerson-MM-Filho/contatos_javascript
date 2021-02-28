@@ -1,34 +1,35 @@
 /*Configurando os botôes de modo de exibição*/
-.showAsList {
+.showOptions {
     position: relative;
-    left: 50px;
-}
-.showAsPanel {
-    position: relative;
-    left: 25px;
-}
-#contactShowAs {
-    position: relative;
-    left: 50px;
-    cursor: pointer;
+    left: 3rem;
+    display: inline-flex;
 }
 
+.showAsList {
+    position: relative;
+}
+
+.showAsPanel {
+    position: relative;
+    left: 1rem;
+}
+
+/*
 #svgShowAsList, 
 #svgShowAsPanel {
     --color-tertiry: #121212;
     --color-hover: #D93B18;
 
     fill: var(--color-tertiry);
-    height: 20px;
-    width: 20px;
-    margin: 10px;
-}
+    height: 1,5rem;
+    width: 1,5rem;
+    margin: 0,5rem;
+}*/
 
 input[type="radio"] {
     position: relative;
-    transform: translateX(-50%) translateY(-50%);
-    width: 20px;
-    height: 20px;
+    width: 1,5rem;
+    height: 1,5rem;
     opacity: 0;
 }
 
