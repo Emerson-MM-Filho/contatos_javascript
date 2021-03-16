@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novo contato</title>
+</head>
+<body>
+    <head>
+        <h1>Novo Contato</h1>
+        <button><a href="/docs/index.html">Contatos</a></button>
+        <div>
+            <form action="addContact">
+                <input type="text" name="contactName" id="contactName" placeholder="Nome">
+                <input type="text" name="contactPhone" id="contactPhone" placeholder="Telefone">
+                <input type="text" name="contactEmail" id="contactEmail" placeholder="Email">
+                <button onclick=saveContact()>Adcionar</button>
+            </form>
+        </div>
+    </head>
+    <script src="/docs/js/addContact.js"></script>
+</body>
+</html>

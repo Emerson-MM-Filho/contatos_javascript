@@ -1,9 +1,7 @@
-* {
+/* * {
     --color-tertiry: #121212;
     --color-hover: #D93B18;
 }
-
-/*Configurando os botôes de modo de exibição*/
 
 .showOptions {
     position: relative;
@@ -42,4 +40,4 @@ input[class="showAsPanel"]:hover + #svgShowAsPanel:hover,
 input[class="showAsPanel"]:checked + #svgShowAsPanel,
 input[class="showAsPanel"]:focus + #svgShowAsPanel {
     fill: var(--color-hover);
-}
+} */
